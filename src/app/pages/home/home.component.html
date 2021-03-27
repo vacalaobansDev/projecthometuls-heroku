@@ -1,0 +1,17 @@
+  <h1>Contratos</h1>
+
+<div class="row" *ngIf="proyectos.length > 0" >
+  <div class="col">
+    <app-slideshow [proyectos]="proyectos"></app-slideshow>
+  </div>
+</div>
+
+  <h1 class="mt-5">Proyectos</h1>
+
+<div class="row" *ngIf="proyectos.length > 0">
+  <div class="col">
+    <app-proyectos-poster-grid [proyectos]="proyectosSlideShow"></app-proyectos-poster-grid>
+  </div>
+</div>
+
+

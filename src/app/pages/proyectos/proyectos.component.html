@@ -1,0 +1,33 @@
+<div class="card-group animate__animated animate__fadeIn animated__faster" *ngFor="let proyecto of proyectos">
+
+  <div class="card">
+      <img class="img-thumbnail" src="https://www.tutorialrepublic.com/examples/images/thumbnail.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h2 class="card-title" style="color:black"><b>{{ proyecto.TITULO }}</b></h2>
+          <p class="card-text" style="color:gray"><strong>Descripcion: </strong>{{ proyecto.DESCRIPCION }}</p>
+          <p class="card-text" style="color:gray"><strong>Direccion ejecutiva: </strong>{{ proyecto.DIRECCION_EJECUCION }}</p>
+          <p class="card-text" style="color:gray"><strong>Duracion: </strong>{{ proyecto.DURACION }}</p>
+          <p class="card-text" style="color:gray"><strong>Tipo duracion: </strong>{{ proyecto.DURACION_TIPO }}</p>
+          <p class="card-text" style="color:gray"><strong>Estado: </strong>{{ proyecto.ESTADO }}</p>
+          <p class="card-text" style="color:gray"><strong>Fase: </strong>{{ proyecto.FASE }}</p>
+          <p class="card-text" style="color:gray"><strong>Fecha de creacion: </strong>{{ proyecto.FECHA_CREACION }}</p>
+          <p class="card-text" style="color:gray"><strong>Fecha de presentacion de la oferta: </strong>{{ proyecto.FECHA_PRESENTACION_OFERTAS }}</p>
+          <p class="card-text" style="color:gray"><strong>ID Proyecto: </strong>{{ proyecto.ID }}</p>
+          <p class="card-text" style="color:gray"><strong>Es privado: </strong>{{ (proyecto.isPrivate) ? 'SI' : 'NO'}}</p>
+          <p class="card-text" style="color:gray"><strong>Modalidad de Contratacion: </strong>{{ proyecto.MODALIDAD_CONTRATACION }}</p>
+          <p class="card-text" style="color:gray"><strong>Precio Total: </strong>{{ proyecto.PRECIO_TOTAL }}</p>
+          <p class="card-text" style="color:gray"><strong>Tipo de Contrato: </strong>{{ proyecto.TIPO_CONTRATO }}</p>
+          <p class="card-text" style="color:gray"><strong>Tipo contrato key: </strong>{{ proyecto.TIPO_CONTRATO_KEY }}</p>
+          <p class="card-text" style="color:gray"><strong>Tipo Proceso: </strong>{{ proyecto.TIPO_PROCESO }}</p>
+          <p class="card-text" style="color:gray"><strong>UNSPSC Principal: </strong>{{ proyecto.UNSPSC_PRINCIPAL }}</p>
+          <p class="card-text" style="color:gray"><strong>Ultima Actualizacion: </strong>{{ proyecto.UPDATED_AT }}</p>
+          <p class="card-text" style="color:gray"><strong>URL: </strong>{{ proyecto.URL }}</p>
+          <p class="card-text" style="color:gray"><strong>Valor Estimado Adquisiones: </strong>{{ proyecto.VALOR_ESTIMADO_ADQUISICIONES }}</p>
+          <p class="card-text" style="color:gray"><strong># vistas: </strong>{{ proyecto.VISTAS }}</p>
+      </div>
+      <div class="card-footer">
+          <small class="text-muted"></small>
+      </div>
+  </div>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-3 mb-5 animate__animated animate__fadeIn animated__faster" *ngFor="let proyecto of proyectos">
+
+    <img
+      [src]="proyecto.isPrivate | poser"
+      class="img-fuid poster"
+      (click)="onProyectoClick( proyecto )"
+    >
+
+    <div>
+      <h3>{{ proyecto.TITULO | slice:0:20 }}...</h3>
+      <div class="row">
+        <div class="col-2 text-white">
+          ${{ proyecto.PRECIO_TOTAL | number:'1.1-2' }}
+        </div>
+        <div class="col-10 text-white">
+          <!-- ***** -->
+          <!-- <star-rating
+            value="5"
+            totalstars="5"
+            checkedcolor="yellow"
+            uncheckedcolor="gray"
+            size="14px"
+            readonly="true" >
+          </star-rating> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,8 @@
+{
+  "/default/*": {
+    "target":"https://fzb19qr3zj.execute-api.us-west-2.amazonaws.com",
+    "secure":false,
+    "logLevel":"debug",
+    "changeOrigin": true
+  }
+}
